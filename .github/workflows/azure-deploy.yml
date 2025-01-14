@@ -30,7 +30,7 @@ jobs:
       with:
         push: true
         tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/campsite-api:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./api/Dockerfile
         context: ./api
         build-args: |
           RUBY_VERSION=3.2
